@@ -34,7 +34,7 @@ if pdf_doc:
 else:
     st.sidebar.write("Upload the PDF first")
 
-job_desc = st.text_area("Copy and paste your job description (Press ctrl+enter to submit)",max_chars=1000)
+job_desc = st.text_area("Copy and paste your job description (Press ctrl+enter to submit)",max_chars=10000)
 
 prompt = f'''Assuming you are an expert in job skill matching and profile short listing.
 You have the resume = {pdf_text} and job description = {job_desc}. Using this data generate the
